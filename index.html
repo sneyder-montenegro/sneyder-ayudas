@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Encuentra la ayuda que te corresponde, sin vueltas · Ayuda Clara</title>
+<meta name="description" content="Guías claras sobre ayudas y trámites en Colombia y España, con enlaces oficiales y consejos contra estafas.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6ee;--card:#fffdf9;--tx:#1f2a2e;--mut:#66727a;--ac:#0b5d57;--ac2:#fff;--hot:#d9582b;--bd:#e8dfd0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a1b;--card:#162325;--tx:#f1ece2;--mut:#9db0b0;--ac:#3fd2bd;--ac2:#052b27;--hot:#ff8a5c;--bd:#27393a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1a1b;--card:#162325;--tx:#f1ece2;--mut:#9db0b0;--ac:#3fd2bd;--ac2:#052b27;--hot:#ff8a5c;--bd:#27393a;color-scheme:dark}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.w{max-width:760px;margin:0 auto;padding:16px}
+h1,h2,.br{font-family:Fraunces,Georgia,"Times New Roman",serif}
+h1{font-size:1.7rem;line-height:1.2;margin:14px 0 6px;font-weight:800}h2{font-size:1.2rem;margin:26px 0 8px;font-weight:600}
+p,li{margin:6px 0}.m{color:var(--mut);font-size:.9rem}a{color:var(--ac);font-weight:600}
+nav{display:flex;gap:16px;align-items:center;padding:6px 0 12px;border-bottom:1px solid var(--bd)}nav a{text-decoration:none}.sp{flex:1}
+.br{display:flex;align-items:center;gap:8px;font-size:1.25rem;font-weight:800;color:var(--tx)}.br i{width:26px;height:26px;border-radius:50% 50% 50% 8px;background:var(--hot);display:inline-block}
+.hero{margin:18px 0 8px;padding:22px 18px;border-radius:20px;background:linear-gradient(135deg,var(--ac),color-mix(in srgb,var(--ac) 60%,#000));color:var(--ac2)}
+.hero h1{font-size:2rem;margin:8px 0}.hero em{font-style:normal;background:linear-gradient(transparent 62%,var(--hot) 62%);padding:0 2px}.hero p{opacity:.92}
+.eb{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;opacity:.85}
+.trust{display:flex;gap:6px 14px;flex-wrap:wrap;font-size:.82rem;font-weight:600;margin-top:12px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 8px}.chips button{white-space:nowrap;padding:9px 14px;border-radius:99px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:600 .9rem Inter,system-ui,sans-serif}.chips button.on{background:var(--hot);color:#fff;border-color:var(--hot)}
+.tabs{display:flex;gap:8px;margin:10px 0}.tabs button{flex:1;padding:12px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:700 1rem Inter,system-ui,sans-serif}.tabs button.on{background:var(--ac);color:var(--ac2);border-color:var(--ac)}
+.pane{display:none}.pane.on{display:block}
+.card{display:block;background:var(--card);border:1px solid var(--bd);border-left:5px solid var(--ac);border-radius:14px;padding:14px 14px 12px;margin:10px 0;text-decoration:none;color:var(--tx);transition:transform .15s}
+.card:hover{transform:translateY(-2px)}.card b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.08rem;color:var(--tx);margin:2px 0}
+.card[data-c=may]{border-left-color:#c98a1b}.card[data-c=hog]{border-left-color:#0b8f7a}.card[data-c=jov]{border-left-color:#6a5acd}.card[data-c=viv]{border-left-color:var(--hot)}.card[data-c=des]{border-left-color:#2f7fd1}
+.tag{display:inline-block;font-size:.74rem;font-weight:700;padding:2px 9px;border-radius:99px;background:var(--bg);border:1px solid var(--bd);color:var(--mut)}
+.card[data-c=may] .tag::before{content:"🧓 "}.card[data-c=hog] .tag::before{content:"🏠 "}.card[data-c=jov] .tag::before{content:"🎓 "}.card[data-c=viv] .tag::before{content:"🔑 "}.card[data-c=des] .tag::before{content:"💼 "}
+.lk{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px;font-size:.92rem}
+.v{display:none}.v.on{display:block}
+label{display:block;font-weight:600;margin:12px 0 4px;font-size:.95rem}
+input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:inherit}
+.chk{display:flex;gap:8px;align-items:flex-start;margin:14px 0;font-size:.88rem;color:var(--mut)}.chk input{width:auto;margin-top:4px}
+.btn{width:100%;padding:14px;border:0;border-radius:12px;background:var(--ac);color:var(--ac2);font:700 1.02rem Inter,system-ui,sans-serif}
+.b2{padding:12px 14px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:700 .95rem Inter,system-ui,sans-serif}
+.warn{border-left:4px solid var(--hot);background:var(--card);padding:10px 12px;border-radius:10px;font-size:.88rem;color:var(--mut);margin:20px 0}
+footer{margin:26px 0 12px;font-size:.85rem;color:var(--mut);display:flex;gap:6px 14px;flex-wrap:wrap;align-items:center}
+.lnk{background:none;border:0;padding:0;color:var(--ac);font:600 .85rem Inter,system-ui,sans-serif;text-decoration:underline}
+#cc{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px 12px calc(12px + env(safe-area-inset-bottom,0px))}
+.ccb{max-width:760px;margin:0 auto;background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:16px;box-shadow:0 10px 40px rgba(0,0,0,.28)}
+.ccb p{font-size:.88rem;margin:4px 0 10px}.ccr{display:flex;gap:8px;flex-wrap:wrap}.ccr button{flex:1;min-width:96px}
+.sw{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-weight:600;margin:6px 0;font-size:.92rem}.sw input{width:auto}
+.fcard{background:var(--card);border:2px solid var(--hot);border-radius:18px;padding:16px;margin:22px 0}.fcard h2{margin-top:0}
+.hb{display:inline-block;margin-top:14px;padding:11px 16px;border-radius:99px;background:var(--hot);color:#fff;text-decoration:none;font-weight:700;font-size:.95rem}
+.fab{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:40;padding:12px 16px;border-radius:99px;background:var(--hot);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><a class="br" href="index.html"><i></i>Ayuda Clara</a><span class="sp"></span><a href="https://wa.me/34624143595?text=Hola%2C%20necesito%20ayuda%20con%20un%20tr%C3%A1mite%20de%20ayudas%20sociales." target="_blank" rel="noopener">WhatsApp</a><a href="contacto.html">Contacto</a></nav>
+<section class="v on" id="v-home">
+<div class="hero"><span class="eb">Información clara · Sin letra pequeña</span><h1>Encuentra la <em>ayuda</em> que te corresponde, sin vueltas</h1><p>Guías sencillas sobre ayudas y trámites en Colombia y España, con enlaces oficiales y avisos contra estafas.</p><div class="trust"><span>✓ Fuentes oficiales</span><span>✓ Sin cobros ocultos</span><span>✓ Actualizado oct. 2026</span></div><a class="hb" href="https://wa.me/34624143595?text=Hola%2C%20necesito%20ayuda%20con%20un%20tr%C3%A1mite%20de%20ayudas%20sociales." target="_blank" rel="noopener">Pedir ayuda por WhatsApp</a></div>
+<h2>¿Qué estás buscando?</h2>
+<div class="chips"><button class="on" onclick="filt('',this)">Todas</button><button onclick="filt('may',this)">🧓 Mayores</button><button onclick="filt('hog',this)">🏠 Hogares y familias</button><button onclick="filt('jov',this)">🎓 Jóvenes y estudios</button><button onclick="filt('viv',this)">🔑 Vivienda</button><button onclick="filt('des',this)">💼 Desempleo</button></div>
+<div class="tabs"><button id="tc" class="on" onclick="show('c')">🇨🇴 Colombia</button><button id="te" onclick="show('e')">🇪🇸 España</button></div>
+<div id="pc" class="pane on">
+<div class="card" data-c="may"><span class="tag">Adultos mayores</span><b>Colombia Mayor</b>Apoyo económico periódico para adultos mayores sin pensión.<div class="lk"><a href="colombia-mayor.html">Leer guía completa</a><a href="https://prosperidadsocial.gov.co" target="_blank" rel="noopener">Prosperidad Social</a></div></div>
+<div class="card" data-c="hog"><span class="tag">Hogares</span><b>Renta Ciudadana</b>Transferencias para hogares en pobreza, según el Sisbén. Programa en revisión, verifica novedades.<div class="lk"><a href="sisben.html">Leer guía completa</a><a href="https://www.sisben.gov.co" target="_blank" rel="noopener">Consultar Sisbén</a></div></div>
+<div class="card" data-c="hog"><span class="tag">Hogares</span><b>Devolución del IVA</b>Compensación del impuesto para hogares de bajos ingresos.<div class="lk"><a href="devolucion-iva.html">Leer guía completa</a><a href="https://prosperidadsocial.gov.co" target="_blank" rel="noopener">Prosperidad Social</a></div></div>
+<div class="card" data-c="jov"><span class="tag">Jóvenes</span><b>Renta Joven</b>Apoyo para estudiantes de educación superior y aprendices del SENA.<div class="lk"><a href="renta-joven.html">Leer guía completa</a><a href="https://prosperidadsocial.gov.co" target="_blank" rel="noopener">Más información</a></div></div>
+<div class="card" data-c="jov"><span class="tag">Estudios</span><b>Becas y créditos ICETEX</b>Financiación para estudiar en Colombia o en el exterior.<div class="lk"><a href="icetex.html">Leer guía completa</a><a href="https://web.icetex.gov.co" target="_blank" rel="noopener">ICETEX</a></div></div>
+<div class="card" data-c="viv"><span class="tag">Vivienda</span><b>Subsidios de vivienda</b>Programas del Gobierno y de las cajas de compensación para comprar o mejorar vivienda.<div class="lk"><a href="https://minvivienda.gov.co" target="_blank" rel="noopener">Ministerio de Vivienda</a></div></div>
+</div>
+<div id="pe" class="pane">
+<div class="card" data-c="des"><span class="tag">Desempleo</span><b>Prestación y subsidio por desempleo</b>Ayudas para quien pierde su trabajo. Se piden con cita previa en el SEPE.<div class="lk"><a href="cita-sepe.html">Leer guía completa</a><a href="https://www.sepe.es" target="_blank" rel="noopener">SEPE</a></div></div>
+<div class="card" data-c="hog"><span class="tag">Hogares</span><b>Ingreso Mínimo Vital</b>Prestación de la Seguridad Social para hogares con pocos recursos.<div class="lk"><a href="ingreso-minimo-vital.html">Leer guía completa</a><a href="https://www.seg-social.es" target="_blank" rel="noopener">Seguridad Social</a></div></div>
+<div class="card" data-c="jov"><span class="tag">Jóvenes</span><b>Ayudas al alquiler y becas</b>Programas estatales y de cada comunidad autónoma. Los requisitos cambian según donde vivas.<div class="lk"><a href="alquiler-joven.html">Leer guía completa</a><a href="https://administracion.gob.es" target="_blank" rel="noopener">administracion.gob.es</a></div></div>
+<div class="card" data-c="hog"><span class="tag">Familias</span><b>Ayudas por hijos y familia numerosa</b>Prestaciones y descuentos para familias. Consulta tu comunidad autónoma.<div class="lk"><a href="ayudas-hijos.html">Leer guía completa</a><a href="https://www.seg-social.es" target="_blank" rel="noopener">Seguridad Social</a></div></div>
+<div class="card" data-c="may"><span class="tag">Mayores</span><b>Dependencia y pensiones</b>Ayudas para personas mayores o con dependencia.<div class="lk"><a href="dependencia.html">Leer guía completa</a><a href="https://www.seg-social.es" target="_blank" rel="noopener">Seguridad Social</a></div></div>
+</div>
+<p class="m" id="emp" hidden>No hay ayudas de este tipo en este país por ahora. Prueba con el otro país o con «Todas».</p>
+<!-- Aquí puedes pegar el bloque de anuncios de AdSense cuando te aprueben -->
+<div class="fcard" id="form"><h2>💬 ¿Necesitas ayuda con tu trámite?</h2><p class="m">Rellena esto y te contactamos por WhatsApp. Es una primera consulta, sin compromiso, y no hace falta enviar documentos.</p><label for="n">Nombre</label><input id="n" autocomplete="given-name">
+<label for="p">País</label><select id="p"><option>Colombia</option><option>España</option></select>
+<label for="a">Ayuda que te interesa</label><select id="a"><option>Adulto mayor / pensión</option><option>Hogar / familia</option><option>Jóvenes / estudios</option><option>Vivienda / alquiler</option><option>Desempleo</option><option>No sé cuál me corresponde</option></select>
+<label for="c">Tu caso (sin datos sensibles)</label><textarea id="c" rows="3"></textarea>
+<div class="chk"><input type="checkbox" id="ok"><label for="ok" style="font-weight:400;margin:0">Acepto que me contacten por WhatsApp para responder mi consulta. Datos usados solo para eso. Ver <a href="privacidad.html">política de privacidad</a>.</label></div>
+<button class="btn" onclick="enviar()">Enviar por WhatsApp</button>
+<p class="m" id="msg"></p>
+<p class="m">No envíes cédula, DNI, claves ni datos bancarios.</p></div>
+<h2>Para todos</h2>
+<a class="card" href="estafas.html"><b>Estafas con ayudas: cómo reconocerlas</b>Señales de alarma y qué hacer si te escriben.</a>
+</section>
+<div class="warn">Web informativa e independiente, <b>sin vinculación con ningún gobierno</b>. La mayoría de las ayudas se piden gratis en las páginas oficiales.</div>
+<footer><a href="privacidad.html">Privacidad</a><a href="aviso-legal.html">Aviso legal</a><a href="cookies.html">Cookies</a><a href="contacto.html">Contacto</a><button class="lnk" onclick="ccopen()">Configurar cookies</button></footer>
+</div>
+<a class="fab" id="fab" href="https://wa.me/34624143595?text=Hola%2C%20necesito%20ayuda%20con%20un%20tr%C3%A1mite%20de%20ayudas%20sociales." target="_blank" rel="noopener">💬 Pedir ayuda</a>
+<div id="cc" role="dialog" aria-labelledby="cct" hidden><div class="ccb"><b id="cct">🍪 Tu privacidad, tu decisión</b>
+<p>Usamos cookies necesarias y, solo si lo aceptas, cookies de publicidad de terceros (Google AdSense). Puedes aceptar, rechazar o elegir. Más información en la <a href="cookies.html">política de cookies</a>.</p>
+<div id="ccp" hidden><label class="sw"><input type="checkbox" checked disabled> Necesarias <span class="m">Siempre activas: guardan tu elección.</span></label><label class="sw"><input type="checkbox" id="cca"> Publicidad <span class="m">Anuncios de Google AdSense.</span></label></div>
+<div class="ccr"><button class="b2" onclick="cc(0)">Rechazar</button><button class="b2" id="ccs" onclick="ccm()">Configurar</button><button class="btn" style="flex:1;width:auto" onclick="cc(1)">Aceptar todas</button></div></div></div>
+<script>
+var WHATSAPP="34624143595"; // Cambia por tu número, formato internacional sin + (ej. 34600111222)
+var K="cc_v1";
+function ld(){try{return JSON.parse(localStorage.getItem(K))}catch(e){return null}}
+function ap(c){document.getElementById("cc").hidden=true;document.body.style.paddingBottom="";if(c&&c.ad){/* AQUÍ: carga el script de AdSense solo si hay consentimiento */}}
+function cc(a){var c={ad:!!a,t:Date.now()};try{localStorage.setItem(K,JSON.stringify(c))}catch(e){}ap(c)}
+function ccm(){var p=document.getElementById("ccp");if(p.hidden){p.hidden=false;document.getElementById("ccs").textContent="Guardar elección"}else{cc(document.getElementById("cca").checked)}}
+function ccopen(){var c=ld(),b=document.getElementById("cc");document.getElementById("cca").checked=!!(c&&c.ad);document.getElementById("ccp").hidden=true;document.getElementById("ccs").textContent="Configurar";b.hidden=false;document.body.style.paddingBottom=b.offsetHeight+"px"}
+var cur="";function upd(){var p=document.querySelector(".pane.on"),n=0;p.querySelectorAll(".card").forEach(function(x){if(x.style.display!=="none")n++});document.getElementById("emp").hidden=n>0}
+function filt(c,b){cur=c;document.querySelectorAll(".chips button").forEach(function(x){x.classList.remove("on")});b.classList.add("on");document.querySelectorAll(".card[data-c]").forEach(function(x){x.style.display=(!c||x.dataset.c===c)?"":"none"});upd()}
+(function(){var c=ld();if(c)ap(c);else ccopen()})();
+ function show(k){["c","e"].forEach(function(x){document.getElementById("p"+x).classList.toggle("on",x===k);document.getElementById("t"+x).classList.toggle("on",x===k)});upd()}
+function enviar(){var n=document.getElementById("n").value.trim(),m=document.getElementById("msg");
+if(!n){m.textContent="Escribe tu nombre.";return}
+if(!document.getElementById("ok").checked){m.textContent="Debes aceptar el contacto para continuar.";return}
+var t="Hola, soy "+n+" ("+document.getElementById("p").value+"). Me interesa: "+document.getElementById("a").value+". "+document.getElementById("c").value.trim();
+window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(t),"_blank");m.textContent="Se abrirá WhatsApp con tu mensaje."}
+</script>
+</body>
+</html>
